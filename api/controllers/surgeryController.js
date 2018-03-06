@@ -44,7 +44,7 @@ exports.index = (req, res) => {
 };
 
 // Display list of all surgeries.
-exports.surgery_list = (req, res, next) => {
+exports.surgery_list_post = (req, res, next) => {
   Surgery.find().populate('patient').populate('doctor')
     .exec((err, surgeriesList) => {
       if (err) { return res.json(err.message); }
@@ -53,7 +53,7 @@ exports.surgery_list = (req, res, next) => {
 };
 
 // Display list of all surgeries.
-exports.surgery_list_post = (req, res, next) => {
+exports.surgery_list_post1 = (req, res, next) => {
   
   console.log(req.body);
   console.log(req.body.doctor);
