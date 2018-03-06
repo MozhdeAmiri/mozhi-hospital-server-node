@@ -1,0 +1,25 @@
+{
+  "name": "hospitalserver",
+  "version": "1.0.0",
+  "description": "RESTful hospital server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Restful"
+  ],
+  "start": [
+    "nodemon server.js"
+  ],
+  "author": "Mozhde Amiri",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.9"
+  }
+}
