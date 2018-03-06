@@ -39,6 +39,9 @@ exports.index = (req, res) => {
       title: 'Mozhi Hospital Home',
       error: err,
       data: results,
+      surgeries_url: 'https://mozhi-hospital-server-node.herokuapp.com/surgeries',
+      doctors_url: 'https://mozhi-hospital-server-node.herokuapp.com/doctors',
+      patients_url: 'https://mozhi-hospital-server-node.herokuapp.com/patients',
     });
   });
 };
